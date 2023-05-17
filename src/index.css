@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 46px 40px 40px;
+  height: 556px;
+  width: 1000px;
+  border: 1px solid rgba(0, 10, 255, 0.1);
+  border-radius: 60px;
+}
+
+.title {
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.diagram {
+  padding: 40px;
+  border-radius: 27px;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: rgba(255, 0, 245, 0.05);
+}
+
+.top-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 47px;
+  margin-bottom: 17px;
+}
+
+.dates {
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+.cell {
+  position: relative;
+  border-radius: 4px;
+  height: 100%;
+  width: 16px;
+  background-color: #000AFF;
+  transition: .3s ease;
+}
+
+.popup {
+  position: absolute;
+  padding: 0 8px;
+  z-index: 1;
+  top: -30px;
+  right: -22px;
+  opacity: 0;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #65FF8E;
+  transition: .3s ease;
+}
+
+.cell:hover {
+  box-shadow: 0px 0px 8px 6px rgba(0, 10, 255, 0.15), inset -2px -2px 6px rgba(0, 2, 53, 0.7), inset 2px 2px 6px rgba(0, 2, 53, 0.7);
+  border-radius: 4px;
+}
+
+.cell:hover .popup {
+  opacity: 1;
+}
+
+.dates {
+  justify-content: space-between;
+  padding-left: 10%;
+}
