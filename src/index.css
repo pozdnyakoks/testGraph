@@ -55,6 +55,12 @@ body {
   gap: 20px;
 }
 
+.left span {
+  display: flex;
+  align-content: flex-end;
+  /* align-self: flex-end; */
+}
+
 .graph {
   display: flex;
   justify-content: space-between;
@@ -63,6 +69,7 @@ body {
 }
 
 .cell {
+  cursor: pointer;
   position: relative;
   border-radius: 4px;
   height: 100%;
